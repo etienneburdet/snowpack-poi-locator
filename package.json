@@ -1,12 +1,14 @@
 {
   "scripts": {
-    "start": "snowpack dev",
+    "start": "snowpack dev --polyfill-node",
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.test.js\""
   },
   "dependencies": {
+    "@mapbox/mapbox-gl-geocoder": "^4.7.0",
     "mapbox-gl": "^1.12.0",
     "node-sass": "^5.0.0",
+    "rollup-plugin-svelte": "^6.1.1",
     "svelte": "^3.24.0"
   },
   "devDependencies": {
